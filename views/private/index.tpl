@@ -34,7 +34,7 @@
         <?php endif; ?>
 	
 <?php
-if ($handle = opendir('/var/www/mytube/videos/')) {
+if ($handle = opendir('/var/www/videos/')) {
     while (false !== ($entry = readdir($handle))) {
         if ($entry != "." && $entry != "..") {
             echo "$entry\n";
