@@ -25,16 +25,10 @@
                 <p><a href="/news/details/<?php echo $a['id']; ?>">Continue reading</a></p>
                 <hr/>
             </article>
-        <?php 
-            endforeach;
-            else: ?>
- 
-        <h1>Welcome!</h1>
- 
         <?php endif; ?>
 	
 <?php
-if ($handle = opendir('/var/www/mytube/videos/')) {
+if ($handle = opendir('/var/www/videos/')) {
     while (false !== ($entry = readdir($handle))) {
         if ($entry != "." && $entry != "..") {
             echo "$entry\n";

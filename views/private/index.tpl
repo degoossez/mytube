@@ -25,19 +25,14 @@
                 <p><a href="/news/details/<?php echo $a['id']; ?>">Continue reading</a></p>
                 <hr/>
             </article>
-        <?php 
-            endforeach;
-            else: ?>
- 
-        <h1>Welcome!</h1>
- 
         <?php endif; ?>
 	
 <?php
 if ($handle = opendir('/var/www/videos/')) {
+	$counter=0;
     while (false !== ($entry = readdir($handle))) {
         if ($entry != "." && $entry != "..") {
-            echo "$entry\n";
+            counter++;
 ?>
 	<video width="320" height="240" controls>
 		<source src="/videos/<?php echo $entry;?>" type="video/mp4">
@@ -46,6 +41,12 @@ if ($handle = opendir('/var/www/videos/')) {
 	</video> 
 <?php
         }
+	if($counter==2)
+	{
+		?>
+		<br>
+		<?php
+	}
     }
     closedir($handle);
 }
