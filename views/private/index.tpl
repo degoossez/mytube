@@ -28,7 +28,7 @@
         <?php endforeach; endif; ?>
 	
 <?php
-if ($handle = opendir('/var/www/videos/')) {
+if ($handle = opendir('/var/www/videos/private/')) {
 	$counter=0;
     while (false !== ($entry = readdir($handle))) {
         if ($entry != "." && $entry != "..") {
@@ -36,8 +36,8 @@ if ($handle = opendir('/var/www/videos/')) {
 	
 ?>
 	<video width="320" height="240" controls>
-		<source src="/videos/<?php echo $entry;?>" type="video/mp4">
-		<source src="/videos/<?php echo $entry;?>" type="video/ogg">
+		<source src="/videos/private/<?php echo $entry;?>" type="video/mp4">
+		<source src="/videos/private/<?php echo $entry;?>" type="video/ogg">
 	Your browser does not support the video tag.
 	</video> 
 <?php

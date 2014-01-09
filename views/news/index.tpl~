@@ -9,7 +9,7 @@
      
         <?php include HOME . DS . 'includes' . DS . 'menu.inc.php'; ?>
          
-        <h1>Private Movies</h1>
+        <h1>News articles</h1>
  
         <?php 
             if ($articles):
@@ -25,33 +25,14 @@
                 <p><a href="/news/details/<?php echo $a['id']; ?>">Continue reading</a></p>
                 <hr/>
             </article>
-        <?php endforeach; endif; ?>
-	
-<?php
-if ($handle = opendir('/var/www/videos/')) {
-	$counter=0;
-    while (false !== ($entry = readdir($handle))) {
-        if ($entry != "." && $entry != "..") {
-            $counter++;
-	
-?>
-	<video width="320" height="240" controls>
-		<source src="/videos/<?php echo $entry;?>" type="video/mp4">
-		<source src="/videos/<?php echo $entry;?>" type="video/ogg">
-	Your browser does not support the video tag.
-	</video> 
-<?php
-        }
-	if($counter==2)
-	{
-		?>
-		<br>
-		<?php
-	}
-    }
-    closedir($handle);
-}
-?>
-        
+        <?php 
+            endforeach;
+            else: ?>
+ 
+        <h1>Welcome!</h1>
+        <p>We currently do not have any articles.</p>
+ 
+        <?php endif; ?>
+         
     </body>
 </html>
