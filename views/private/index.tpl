@@ -25,14 +25,15 @@
                 <p><a href="/news/details/<?php echo $a['id']; ?>">Continue reading</a></p>
                 <hr/>
             </article>
-        <?php endif; ?>
+        <?php endforeach; endif; ?>
 	
 <?php
 if ($handle = opendir('/var/www/videos/')) {
 	$counter=0;
     while (false !== ($entry = readdir($handle))) {
         if ($entry != "." && $entry != "..") {
-            counter++;
+            $counter++;
+	
 ?>
 	<video width="320" height="240" controls>
 		<source src="/videos/<?php echo $entry;?>" type="video/mp4">
