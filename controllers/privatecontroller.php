@@ -14,7 +14,7 @@ class privateController extends Controller
              
             $articles = $this->_model->getNews();
             $this->_view->set('articles', $articles);
-            $this->_view->set('title', 'News articles from the database');
+            $this->_view->set('title', 'Private Section');
              
             return $this->_view->output();
              
