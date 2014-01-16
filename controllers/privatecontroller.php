@@ -15,7 +15,20 @@ class privateController extends Controller
             $articles = $this->_model->getNews();
             $this->_view->set('articles', $articles);
             $this->_view->set('title', 'Private Section');
-             
+		$FileList[] =array();
+		if ($handle = opendir('/var/www/videos/private/')) {
+			$counter=0;
+			$fi = new FilesystemIterator('/var/www/videos/private/', FilesystemIterator::SKIP_DOTS);
+		    while (false !== ($entry = readdir($handle))) {
+			if ($entry != "." && $entry != "..") {
+			    $FileList[$counter]=$entry;
+			    $counter++;
+			}
+		    }
+		    closedir($handle);
+		}
+                $this->_view->set('FileList',$FileList);
+                $this->_view->set('counter',$counter);
             return $this->_view->output();
              
         } catch (Exception $e) {
@@ -49,4 +62,5 @@ class privateController extends Controller
         }
     }
     // End
+
 }

@@ -13,20 +13,7 @@
 		 
 		    <?php include HOME . DS . 'includes' . DS . 'menu.inc.php'; ?>
 
-        	<?php
-		$FileList[] =array();
-		if ($handle = opendir('/var/www/videos/private/')) {
-			$counter=0;
-			$fi = new FilesystemIterator('/var/www/videos/private/', FilesystemIterator::SKIP_DOTS);
-		    while (false !== ($entry = readdir($handle)) && $counter<3) {
-			if ($entry != "." && $entry != "..") {
-			    $FileList[$counter]=$entry;
-			    $counter++;
-			}
-		    }
-		    closedir($handle);
-		}
-		?>		     
+		     
 		<!-- Carousel
 		================================================== -->
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -88,6 +75,25 @@
       <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
       <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
     </div><!-- /.carousel -->
+    <div class="container">
+	<?php for($j=0;$j<$counter;$j++) { ?>
+	  <div class="row">
+	    <?php for($i=0;$i<3 && $j<$counter;$i++){ ?>
+	    <div class="col-md-4">
+	      <h2><?php echo $FileList[$j];?></h2>
+	      <p>
+		    <video width="320" height="240" controls>
+			<source src="/videos/private/<?php echo $FileList[$j];?>" type="video/mp4">
+			<source src="/videos/private/<?php echo $FileList[$j];?>" type="video/ogg">
+			Your browser does not support the video tag.
+		    </video> 
+	      </p>
+	      <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+	    </div>
+	    <?php $j++;} ?>
+	  </div>
+	<?php } ?>
+    </div>
 		<!-- Bootstrap core JavaScript
 		================================================== -->
 		<!-- Placed at the end of the document so the pages load faster -->

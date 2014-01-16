@@ -1,6 +1,6 @@
 <?php
  
-class NewsController extends Controller
+class aboutController extends Controller
 {
     public function __construct($model, $action)
     {
@@ -14,21 +14,8 @@ class NewsController extends Controller
              
             $articles = $this->_model->getNews();
             $this->_view->set('articles', $articles);
-            $this->_view->set('title', 'public Section');
-		$FileList[] =array();
-		if ($handle = opendir('/var/www/videos/public/')) {
-			$counter=0;
-			$fi = new FilesystemIterator('/var/www/videos/public/', FilesystemIterator::SKIP_DOTS);
-		    while (false !== ($entry = readdir($handle))) {
-			if ($entry != "." && $entry != "..") {
-			    $FileList[$counter]=$entry;
-			    $counter++;
-			}
-		    }
-		    closedir($handle);
-		}
-                $this->_view->set('FileList',$FileList);
-                $this->_view->set('counter',$counter);
+            $this->_view->set('title', 'Private Section');
+             
             return $this->_view->output();
              
         } catch (Exception $e) {
@@ -62,5 +49,4 @@ class NewsController extends Controller
         }
     }
     // End
-
 }
