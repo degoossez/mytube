@@ -40,10 +40,7 @@
 	    echo "The file ".  basename( $_FILES['uploadedfile']['name']). 
 	    " has been uploaded";
 
-    $conn_id = ftp_connect("thelegendmaker.net");
-    if (false === $conn_id) {
-	throw new Exception("FTP connection error!");
-    }
+
     $ftp_server="localhost"; 
     $ftp_user_name=$_POST['user']; 
     $ftp_user_pass=$_POST['pw']; 
@@ -52,7 +49,12 @@
     
     // set up basic connection 
     $conn_id = ftp_connect($ftp_server); 
-    
+     $conn_id = ftp_connect("thelegendmaker.net");
+    if (false === $conn_id) {
+	throw new Exception("FTP connection error!");
+    }
+    else
+    {
     // login with username and password 
     $login_result = ftp_login($conn_id, $ftp_user_name, $ftp_user_pass); 
     
@@ -63,13 +65,14 @@
     } else { 
     echo "There was a problem while uploading $file\n"; 
     exit; 
-    } 
+    }
+    }
     // close the connection 
     ftp_close($conn_id);	  
 	    
 	} else{
 	    echo "There was an error uploading the file, please try again!";
-	}   
+	}
     }
     ?>
 		<!-- Bootstrap core JavaScript
