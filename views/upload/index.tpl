@@ -22,7 +22,7 @@
 	</span>
 
         <label class="checkbox">
-          <input type="checkbox" value="Private"> Private?
+          <input type="checkbox" value="Private" name="private"> Private?
         </label>
         <button class="btn btn-lg btn-primary btn-block" type="submit" name="upload">Upload</button>
       </form>
@@ -44,9 +44,14 @@
     $ftp_server="localhost"; 
     $ftp_user_name=$_POST['user']; 
     $ftp_user_pass=$_POST['pw']; 
-    $file = $target_path;//tobe uploaded 
-    $remote_file = '/public/' . basename( $_FILES['uploadedfile']['name']); 
-    
+    $file = $target_path;//tobe uploaded
+    if (isset($_POST['private'])) {
+	$remote_file = '/private/' . basename( $_FILES['uploadedfile']['name']); 
+    // Checkbox is selected
+    } else {
+        $remote_file = '/public/' . basename( $_FILES['uploadedfile']['name']); 
+    // Alternate code
+    }
     // set up basic connection 
     $conn_id = ftp_connect($ftp_server); 
     if (false === $conn_id) {
