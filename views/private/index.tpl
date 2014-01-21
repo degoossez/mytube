@@ -10,10 +10,7 @@
 		<link href="css/carousel.css" rel="stylesheet">
 		</head>
 		<body>
-		 
-		    <?php include HOME . DS . 'includes' . DS . 'menu.inc.php'; ?>
-
-		     
+		    <?php include HOME . DS . 'includes' . DS . 'menu.inc.php'; ?>	     
 		<!-- Carousel
 		================================================== -->
 <div id="myCarousel" class="carousel slide" data-ride="carousel">

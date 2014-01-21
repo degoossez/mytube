@@ -12,14 +12,15 @@
 		<body>
 		    <?php include HOME . DS . 'includes' . DS . 'menu.inc.php'; ?>
     <div class="container">
-      <form action='' method='post' class="form-signin" role="form">
+      <form enctype="multipart/form-data" action='' method='post' class="form-signin" role="form">
         <h2 class="form-signin-heading">Upload File</h2>
         <input type="text" name="user" class="form-control" placeholder="account name" required autofocus>
         <input type="password" name="pw" class="form-control" placeholder="Password" required>
-	<input type="text" name="path" class="form-control" placeholder="path" required>
-	<span class="btn btn-default btn-file ">
-	    Browse <input type="file" name="datafile">
+	 <span class="btn btn-default btn-file ">
+	    <input type="hidden" name="MAX_FILE_SIZE" value="100000" />
+	    Choose a file to upload: <input name="uploadedfile" type="file" /><br />
 	</span>
+
         <label class="checkbox">
           <input type="checkbox" value="Private"> Private?
         </label>
@@ -27,14 +28,24 @@
       </form>
 
     </div>
-    <?php
+
+    <?php include HOME . DS . 'includes' . DS . 'ftp_class.php';
     if(isset($_POST['upload']))
     {
+	//$target_path = "/var/www/mytube/views/upload/uploads/";
+	$targt_path = "/tmp/uploads/";
+	$target_path = $target_path . basename( $_FILES['uploadedfile']['name']); 
+	
+	if(move_uploaded_file($_FILES['uploadedfile']['tmp_name'], $target_path)) {
+	    echo "The file ".  basename( $_FILES['uploadedfile']['name']). 
+	    " has been uploaded";
+
+
     $ftp_server="localhost"; 
     $ftp_user_name=$_POST['user']; 
     $ftp_user_pass=$_POST['pw']; 
-    $file = $_POST['path'] . $_POST['datafile'];//tobe uploaded 
-    $remote_file = $_POST['datafile']; 
+    $file = $target_path;//tobe uploaded 
+    $remote_file = basename( $_FILES['uploadedfile']['name']); 
     
     // set up basic connection 
     $conn_id = ftp_connect($ftp_server); 
@@ -51,7 +62,11 @@
     exit; 
     } 
     // close the connection 
-    ftp_close($conn_id);	
+    ftp_close($conn_id);	  
+	    
+	} else{
+	    echo "There was an error uploading the file, please try again!";
+	}   
     }
     ?>
 		<!-- Bootstrap core JavaScript

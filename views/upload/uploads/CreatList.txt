@@ -1,0 +1,207 @@
+Remnant Overmind 672 1344 Cave Bat 14 38 
+Weak Angel 29 62 
+Night Bat 58 125 
+Goretongue Gargoyle 106 274 
+Pulse Bat 115 211 
+Balrog 163 264 
+Crypt Bat 163 298 
+Firewound Angel 250 398 
+Broken Storm 206 413 
+Pit Wraith Lurker 394 523 
+Mutated Cave Bat 254 509 
+Air Remnant 240 480 
+Nightwing Gargoyle 379 965 
+Red Storm 302 605 
+Balrog Devourer 264 648 
+Mutated Pulse Bat 341 725 
+Ramun Rift Dancer 77 139 
+Goldblight Angel 523 1080 
+Raving Storm 398 797 
+Vapour Remnant 384 768 
+Mutated Crypt Bat 456 778 
+Nadin Rift Dancer 96 158 
+Dragon Scout 437 869 
+Pit Wraith Dominator 778 1003 
+Cyclone 475 950 
+Dragon Nymph 494 960 
+Balrog Overlord 312 1248 
+Inaer Rift Dancer 101 206 
+Willow Spirit 485 1109 
+Bloodclaw Gargoyle 725 1541 
+Dragon Guardian 523 1085 
+Hurricane 571 1142 
+Pit Wraith Titan 931 1526 
+Aen Rift Dancer 115 235 
+Dragon Soldier 586 1152 
+Frozen Spirit 538 1387 
+Dragon Scream 595 1253 
+Vampire Bat 754 1099 
+Dragon Sentinel 658 1286 
+Thunder Storm 677 1354 
+Angel Soulslayer 907 1963 
+Aerum Rift Dancer 130 264 
+Dragon Sentry 725 1310 
+Succubus Spirit 734 1382 
+Dragon Revenant 744 1426 
+Storm Lord 758 1517 
+Ancient Spirit 725 1699 
+Dragon Queen 806 1589 
+Rift Channeler 158 264 
+Pit Wraith Lord 1205 1834 
+Balrog Shadow Lord 754 1613
+Cursed Remnant 672 1344 
+Undead Gimp 14 38 
+Weak Devil 38 43 
+Aardvark's Pit Maggot 5 10 
+Undead Demon 58 139 
+Chaos Guard 91 302 
+Zombie 101 235 
+Stone Devil 283 331 
+Creep Zombie 139 350 
+Life Reaper 158 278 
+Rotten Lich 235 370 
+Spitting Pit Worm 307 686 
+Doom Zombie 245 518 
+Death Remnant 240 480 
+Skull Devil 552 619 
+Fallen Carnage 254 710 
+Bone Reaper 322 538 
+Diabolic Observer 293 821 
+Inox Apocalypse 62 168 
+Infernal Guard 610 912 
+Lich 456 701 
+Styx Remnant 384 768 
+Anguish Banshee 446 806 
+Zarox Apocalypse 77 197 
+Diabolic Watchman 408 994 
+Pit Worm Gladiator 581 1378 
+Lich Priest 533 840 
+Rotten Carnage 432 1123 
+Soul Reaper 485 950 
+Agor Apocalypse 86 235 
+Doom Devil 950 1075 
+Impaler Banshee 490 1104 
+Diabolic Spectator 499 1195 
+Lich Shadowcaster 648 994 
+Accursed Pit Worm 701 1934 
+Gorum Apocalypse 101 264 
+Diabolic Intruder 595 1200 
+Styx Banshee 706 1046 
+Shadow Carnage 504 1522 
+Lich Hellcaster 778 1075 
+Diabolic Henchman 677 1334 
+Pit Guard 902 1987 
+Aaxer Apocalypse 130 264 
+Destruction Banshee 792 1128 
+Diabolic Commander 706 1430 
+Lich Overseer 806 1277 
+Diabolic Menace 763 1474 
+Carnage Tormenter 696 1656 
+Abyss Banshee 898 1349 
+Apocalypse Channeler 139 298 
+Vicious Pit Worm 874 2410 
+Diabolic Nemesis 754 1795 
+Incursion Reaper 854 1435
+Mog Rat 14 38 
+Sand Giant 38 48 
+Black Rat 72 106 
+Granite Golem 106 288 
+Swamp Rat 125 187 
+Crude Tremor 144 298 
+Plague Rat 178 283 
+Wall Giant 288 341 
+Bump Imler 158 504 
+Magma Golem 278 749 
+Tiny Imling 307 422 
+Earth Remnant 240 480 
+Rock Giant 475 787 
+Brim Smith 422 374 
+Pyroclastic Tremor 221 806 
+Crushing Imler 326 763 
+Urhul Tempest 77 139 
+Golem Pit Warrior 494 1157 
+Small Imling 446 730 
+Volcanic Remnant 384 768 
+Crystal Smith 341 1037 
+Giant Mangler 715 1123 
+Ahnkol Tempest 82 187 
+Ferocious Fiend 451 898 
+Granite Imler 427 1037 
+Putrid Imling 538 917 
+Obsidian Tremor 346 1224 
+Quarnok Tempest 106 197 
+Golem Pit Master 691 1579 
+Dark Brim Smith 734 624 
+Berserker Fiend 552 1080 
+Black Crystal Smith 422 1454 
+Boulder Imler 494 1378 
+Cosmic Giant 994 1397 
+Quamar Tempest 106 254 
+Rancid Imling 739 1013 
+Thrasher Fiend 634 1253 
+Depravity Smith 883 854 
+Marauder Fiend 677 1325 
+Ahnok Tempest 130 264 
+Disease Crafter 494 1752 
+Haunted Golem 782 2213 
+Silver Imler 682 1459 
+Diamond Imling 792 1315 
+Mauler Fiend 758 1474 
+Hammer Lord 1042 965 
+Destroyer Fiend 802 1560 
+Tempest Channeler 144 288 
+Death Crafter 662 1978 
+Nightmare Golem 835 2515 
+Prismatic Tremor 725 1666
+Remnant Acolyte 672 1344 
+Fire Imp 14 38 
+Ebony Ent 24 72 
+Imp Warrior 72 115 
+Dark Wolf 144 216 
+Imp Warlord 130 182 
+Monk Preacher 168 259 
+Imp Commander 178 278 
+Ashwood Ent 197 514 
+Blood Hound 221 389 
+Light Hunter 437 437 
+Imp Necromancer 283 446 
+Forest Remnant 240 480 
+Forest Priest 293 629 
+Hemlock Ent 389 960 
+Monk Elementalist 288 624 
+Horror Hound 346 710 
+Vanelin Seraph 62 168 
+Mystic Wolf 538 1085 
+Spider Sorceress 403 811 
+Meadow Remnant 384 768 
+Imp Necrolord 446 792 
+Mountain Priest 427 936 
+Undolim Seraph 72 206 
+Elder Ent 600 1363 
+Shallow Hound 490 922 
+Water Priest 461 1075 
+Monk Destructor 456 1008 
+Viper Sorceress 518 1061 
+Servant Hunter 994 994 
+Andolin Seraph 82 245 
+Fire Priest 514 1157 
+Wicked Carver 662 950 
+Siralim Seraph 91 278 
+Ancient Ent 739 1920 
+Hollow Hound 614 1152 
+Raptor Sorceress 614 1253 
+War Priest 542 1430 
+Disciple Sorcerer 662 1301 
+Twisted Carver 811 1042 
+Neralim Seraph 106 307 
+Zealot Sorcerer 686 1349 
+Hunter Director 1267 1267 
+Priest of Light 638 1546 
+Terror Hound 854 1157 
+Mirage Cleric 758 1474 
+Priest of Radiance 686 1661 
+Delusion Cleric 792 1579 
+Seraph Channeler 120 336 
+Priest Vizier 734 1810 
+Illusion Wolf 1042 2141 
+Monk Annihilator 768 1584
