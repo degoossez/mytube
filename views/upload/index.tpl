@@ -33,14 +33,17 @@
     if(isset($_POST['upload']))
     {
 	//$target_path = "/var/www/mytube/views/upload/uploads/";
-	$targt_path = "/tmp/uploads/";
+	$target_path = "/tmp/uploads/";
 	$target_path = $target_path . basename( $_FILES['uploadedfile']['name']); 
 	
 	if(move_uploaded_file($_FILES['uploadedfile']['tmp_name'], $target_path)) {
 	    echo "The file ".  basename( $_FILES['uploadedfile']['name']). 
 	    " has been uploaded";
 
-
+    $conn_id = ftp_connect("thelegendmaker.net");
+    if (false === $conn_id) {
+	throw new Exception("FTP connection error!");
+    }
     $ftp_server="localhost"; 
     $ftp_user_name=$_POST['user']; 
     $ftp_user_pass=$_POST['pw']; 
