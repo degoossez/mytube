@@ -88,7 +88,6 @@
 			Your browser does not support the video tag.
 		    </video> 
 	      </p>
-	      <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
 	    </div>
 	    <?php $j++;} ?>
 	  </div>
