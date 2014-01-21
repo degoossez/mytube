@@ -38,18 +38,17 @@
 	
 	if(move_uploaded_file($_FILES['uploadedfile']['tmp_name'], $target_path)) {
 	    echo "The file ".  basename( $_FILES['uploadedfile']['name']). 
-	    " has been uploaded";
+	    " has been uploaded! \n";
 
 
     $ftp_server="localhost"; 
     $ftp_user_name=$_POST['user']; 
     $ftp_user_pass=$_POST['pw']; 
     $file = $target_path;//tobe uploaded 
-    $remote_file = basename( $_FILES['uploadedfile']['name']); 
+    $remote_file = '/public/' . basename( $_FILES['uploadedfile']['name']); 
     
     // set up basic connection 
     $conn_id = ftp_connect($ftp_server); 
-     $conn_id = ftp_connect("thelegendmaker.net");
     if (false === $conn_id) {
 	throw new Exception("FTP connection error!");
     }
