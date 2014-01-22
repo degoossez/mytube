@@ -55,7 +55,11 @@
     // set up basic connection 
     $conn_id = ftp_connect($ftp_server); 
     if (false === $conn_id) {
-	throw new Exception("FTP connection error!");
+        ?>
+	<div class="alert alert-success">
+	<a href="#" class="alert-link"><?php echo "FTP connection error!"; ?></a>
+        </div>
+    <?php 
     }
     else
     {
@@ -63,11 +67,19 @@
     $login_result = ftp_login($conn_id, $ftp_user_name, $ftp_user_pass); 
     
     // upload a file 
-    if (ftp_put($conn_id, $remote_file, $file, FTP_ASCII)) { 
-    echo "successfully uploaded $file\n"; 
+    if (ftp_put($conn_id, $remote_file, $file, FTP_ASCII)) {
+    ?>
+	<div class="alert alert-success">
+	<a href="#" class="alert-link"><?php echo "successfully uploaded $file\n"; ?></a>
+        </div>
+    <?php 
     exit; 
-    } else { 
-    echo "There was a problem while uploading $file\n"; 
+    } else {
+    ?>
+	<div class="alert alert-success">
+	<a href="#" class="alert-link"><?php echo "There was a problem while uploading $file\n"; ?></a>
+        </div>
+    <?php 
     exit; 
     }
     }
@@ -75,7 +87,11 @@
     ftp_close($conn_id);	  
 	    
 	} else{
-	    echo "There was an error uploading the file, please try again!";
+    ?>
+	<div class="alert alert-success">
+	<a href="#" class="alert-link"><?php echo "There was an error uploading the file, please try again!"; ?></a>
+        </div>
+    <?php    
 	}
     }
     ?>

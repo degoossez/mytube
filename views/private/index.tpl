@@ -82,6 +82,7 @@
 		    <video width="320" height="240" controls>
 			<source src="/videos/private/<?php echo $FileList[$j];?>" type="video/mp4">
 			<source src="/videos/private/<?php echo $FileList[$j];?>" type="video/ogg">
+			<source src="/videos/private/<?php echo $FileList[$j];?>" type="video/ovg">
 			Your browser does not support the video tag.
 		    </video> 
 	      </p>
