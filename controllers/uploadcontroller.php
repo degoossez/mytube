@@ -1,5 +1,5 @@
 <?php
- 
+ ini_set('display_errors','off');
 class uploadController extends Controller
 {
     public function __construct($model, $action)

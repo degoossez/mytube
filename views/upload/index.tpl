@@ -10,7 +10,7 @@
 		<link href="css/signin.css" rel="stylesheet">
 		</head>
 		<body>
-		    <?php include HOME . DS . 'includes' . DS . 'menu.inc.php'; ?>
+		    <?php ini_set('display_errors','off'); include HOME . DS . 'includes' . DS . 'menu.inc.php'; ?>
     <div class="container">
       <form enctype="multipart/form-data" action='' method='post' class="form-signin" role="form">
         <h2 class="form-signin-heading">Upload File</h2>
@@ -59,7 +59,7 @@
     $conn_id = ftp_connect($ftp_server); 
     if (false === $conn_id) {
         ?>
-	<div class="alert alert-success">
+	<div class="alert alert-warning">
 	<a href="#" class="alert-link"><?php echo "FTP connection error!"; ?></a>
         </div>
     <?php 
@@ -79,7 +79,7 @@
     exit; 
     } else {
     ?>
-	<div class="alert alert-success">
+	<div class="alert alert-warning">
 	<a href="#" class="alert-link"><?php echo "There was a problem while uploading $file\n"; ?></a>
         </div>
     <?php 
@@ -91,7 +91,7 @@
 	    
 	} else{
     ?>
-	<div class="alert alert-success">
+	<div class="alert alert-warning">
 	<a href="#" class="alert-link"><?php echo "There was an error uploading the file, please try again!"; ?></a>
         </div>
     <?php    

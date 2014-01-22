@@ -1,5 +1,5 @@
 <?php
- 
+ ini_set('display_errors','off');
 class uploadModel extends Model
 {
     public function getNews()
